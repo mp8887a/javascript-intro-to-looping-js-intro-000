@@ -20,9 +20,12 @@ function maybeTrue() {
   return Math.random() >= 0.5
 }
 
-function doWhileLoop(array) {
-  do {
-    array = array.slice(1)
-  } while (array.length > 0 && maybeTrue())
-  return array
+function incrementVariable() {
+  i = i + 1;
+  return i;
 }
+
+  do {
+    console.log("I run once regardless.");
+  } while (incrementVariable() > i);
+  
